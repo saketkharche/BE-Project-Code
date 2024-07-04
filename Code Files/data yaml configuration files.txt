@@ -1,0 +1,41 @@
+//data.yaml for bike detection (dataset 1)
+path: /content/drive/MyDrive/Bike Detection
+train: /content/drive/MyDrive/Bike Detection/train
+test: /content/drive/MyDrive/Bike Detection/test
+val: /content/drive/MyDrive/Bike Detection/valid
+nc: 1
+names: ['Person_Bike']
+
+
+--------------------------------------------------------------------------
+//data.yaml for helmet detection (dataset 2)
+names:
+- With Helmet
+- Without Helmet
+nc: 2
+roboflow:
+  license: Public Domain
+  project: bike-helmet-detection-2vdjo
+  url: https://universe.roboflow.com/bike-helmets/bike-helmet-detection-2vdjo/dataset/1
+  version: 1
+  workspace: bike-helmets
+test: ../test/images
+train: train/images
+val: valid/images
+
+
+--------------------------------------------------------------------------
+//data.yaml for number plate scanning (dataset 3)
+names:
+- License_Plate
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: vehicle-registration-plates-trudk
+  url: https://universe.roboflow.com/augmented-startups/vehicle-registration-plates-trudk/dataset/1
+  version: 1
+  workspace: augmented-startups
+test: /content/Vehicle-Registration-Plates-1/test/images
+train: /content/Vehicle-Registration-Plates-1/train/images
+val: /content/Vehicle-Registration-Plates-1/valid/images
+

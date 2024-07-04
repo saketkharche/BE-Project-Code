@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Info</title>
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+/* base.css */
+
+.info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.info h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.info .description {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.steps {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.steps li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.step-content p {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .info h1 {
+    font-size: 30px;
+  }
+
+  .info .description {
+    font-size: 16px;
+  }
+
+  .info h2 {
+    font-size: 22px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .step-content h3 {
+    font-size: 18px;
+  }
+
+  .step-content p {
+    font-size: 14px;
+  }
+}
+/* base.css */
+
+.info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.info h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info .description {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.steps {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.steps li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.additional-info {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.use-cases {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+.use-cases li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .info h1 {
+    font-size: 30px;
+  }
+
+  .info .description {
+    font-size: 16px;
+  }
+
+  .info h2 {
+    font-size: 22px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .step-content h3 {
+    font-size: 18px;
+  }
+
+  .step-content p {
+    font-size: 14px;
+  }
+
+  .additional-info {
+    font-size: 16px;
+  }
+
+  .use-cases li {
+    font-size: 14px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+
+
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/">Detection</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/info">Info</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="info">
+        <h1>Traffic Sign Detection using Computer Vision</h1>
+        <p class="description">Traffic sign detection is a crucial task in computer vision, particularly in the realm of autonomous driving, driver assistance systems, and intelligent transportation systems. It involves automatically identifying and recognizing traffic signs from images or video streams captured by cameras.</p>
+
+        <h2>Process Overview</h2>
+        <ul class="steps">
+            <li>
+                <span class="step-number">1</span>
+                <div class="step-content">
+                    <h3>Image Acquisition</h3>
+                    <p>Capturing images or video frames from cameras mounted on vehicles or at roadside locations.</p>
+                </div>
+            </li>
+            <li>
+                <span class="step-number">2</span>
+                <div class="step-content">
+                    <h3>Preprocessing</h3>
+                    <p>Enhancing image quality and reducing noise through resizing, color space conversion, and contrast adjustment.</p>
+                </div>
+            </li>
+            <li>
+                <span class="step-number">3</span>
+                <div class="step-content">
+                    <h3>Feature Extraction</h3>
+                    <p>Extracting relevant features from preprocessed images to represent traffic signs effectively, such as color, shape, and texture.</p>
+                </div>
+            </li>
+            <li>
+                <span class="step-number">4</span>
+                <div class="step-content">
+                    <h3>Detection</h3>
+                    <p>Detecting the presence and location of traffic signs using machine learning algorithms or computer vision techniques.</p>
+                </div>
+            </li>
+            <li>
+                <span class="step-number">5</span>
+                <div class="step-content">
+                    <h3>Classification</h3>
+                    <p>Classifying the detected traffic signs into different classes based on their shape, color, or specific symbols.</p>
+                </div>
+            </li>
+            <li>
+                <span class="step-number">6</span>
+                <div class="step-content">
+                    <h3>Post-processing</h3>
+                    <p>Refining the detected traffic signs by applying post-processing techniques to improve accuracy.</p>
+                </div>
+            </li>
+            <li>
+                <span class="step-number">7</span>
+                <div class="step-content">
+                    <h3>Visualization and Decision-making</h3>
+                    <p>Communicating the detected and classified traffic signs for visualization and integration into decision-making processes.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <h2>Additional Information</h2>
+        <p class="additional-info">The application of traffic sign detection using computer vision has several advantages. It can provide real-time assistance to drivers by detecting and recognizing various types of traffic signs, including speed limits, stop signs, yield signs, and more. This helps drivers maintain traffic rules and regulations, enhancing road safety.</p>
+
+        <h2>Future Use Cases and Applications</h2>
+        <ul class="use-cases">
+            <li>**Autonomous Vehicles**: Traffic sign detection is essential for autonomous vehicles to understand and respond to traffic rules, enabling them to navigate safely and make appropriate decisions on the road.</li>
+            <li>**Smart Cities**: Implementing traffic sign detection in smart city infrastructure can enhance traffic management, optimize traffic flow, and provide valuable insights for urban planning.</li>
+            <li>**Driver Assistance Systems**: Traffic sign detection can be integrated into driver assistance systems to provide real-time alerts and warnings to drivers, improving their situational awareness and reducing the risk of accidents.</li>
+            <li>**Traffic Analysis**: By analyzing traffic signs, patterns, and their locations, traffic sign detection can contribute to traffic analysis, enabling authorities to make informed decisions regarding road improvements, signage placements, and traffic control measures.</li>
+            <li>**Pedestrian Safety**: Traffic sign detection can also be extended to pedestrian safety systems, where it can help detect and analyze pedestrian crossing signs, school zone signs, and other signs relevant to pedestrian safety.</li>
+        </ul>
+    </div>
+</body>
+</html>

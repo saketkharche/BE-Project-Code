@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+/* base.css */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/* base.css */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/">Detection</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/info">Info</a></li>
+        </ul>
+    </nav>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="{{ url_for('static', filename='background-video.mp4') }}" type="video/mp4">
+        </video>
+        <div class="content">
+ <h1>Welcome to the Traffic Sign Detection Web App</h1>
+            <p>Experience the power of our advanced traffic sign detection model.</p>
+            <a href="/" class="button">Go to Detection</a>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+/* base.css */
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+/* base.css */
+
+.info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.info h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info .description {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.steps {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.steps li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.additional-info {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.use-cases {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+.use-cases li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .info h1 {
+    font-size: 30px;
+  }
+
+  .info .description {
+    font-size: 16px;
+  }
+
+  .info h2 {
+    font-size: 22px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .step-content h3 {
+    font-size: 18px;
+  }
+
+  .step-content p {
+    font-size: 14px;
+  }
+
+  .additional-info {
+    font-size: 16px;
+  }
+
+  .use-cases li {
+    font-size: 14px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/">Detection</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/info">Info</a></li>
+        </ul>
+    </nav>
+
+    <h1>About Us</h1>
+    <p>Traffic sign detection is an important task in the field of computer vision, specifically in the context of autonomous driving, driver assistance systems, and intelligent transportation systems. The goal is to automatically detect and recognize traffic signs in real-time from images or video streams captured by cameras mounted on vehicles or at roadside locations.</p>
+
+    <h2>Project Members</h2>
+
+    <div class="members">
+        <div class="member">
+            <div class="card">
+                <img src="{{ url_for('static', filename='gayatri.jpg') }}" alt="Member 1">
+                <div class="card-content">
+                    <h3>Member 1</h3>
+                    <p>Role: Backend Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="card">
+                <img src="{{ url_for('static', filename='aa.jpg') }}" alt="Member 2">
+                <div class="card-content">
+                    <h3>Member 2</h3>
+                    <p>Role: Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="card">
+                <img src="{{ url_for('static', filename='aparna.jpg') }}" alt="Member 3">
+                <div class="card-content">
+                    <h3>Member 3</h3>
+                    <p>Role: Machine Learning Engineer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member">
+            <div class="card">
+                <img src="{{ url_for('static', filename='janvi.jpg') }}" alt="Member 4">
+                <div class="card-content">
+                    <h3>Member 4</h3>
+                    <p>Role: Data Scientist</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
+    
+</body>
+</html>
